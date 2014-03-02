@@ -11,13 +11,13 @@
 }
 
 body {
-  background: #fb887c;
-  color: #fff;
+  background: white;
+  color: black;
   font-family: 'Lato', Arial, sans-serif;
 }
 
 a {
-  color: #fff;
+  color: white;
   opacity: 0.7;
   text-decoration: none;
 }
