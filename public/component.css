@@ -489,3 +489,7 @@ input:focus::-ms-input-placeholder {
   border: 5px solid silver;
   font-size: 2em;
 }
+
+#goals {
+  border: 5px solid red;
+}
