@@ -179,8 +179,6 @@
     }
   }
 
-
-
   // add to global namespace
   window.NLForm = NLForm;
 
