@@ -40,8 +40,8 @@
         self.fldOpen++;
         self.fields.push( new NLField( self, el, 'input', self.fldOpen ) );
       } );
-      this.overlay.addEventListener( 'click', function(ev) { self._closeFlds(); } );
-      this.overlay.addEventListener( 'touchstart', function(ev) { self._closeFlds(); } );
+      // this.overlay.addEventListener( 'click', function(ev) { self._closeFlds(); } );
+      // this.overlay.addEventListener( 'touchstart', function(ev) { self._closeFlds(); } );
     },
     _closeFlds : function() {
       if( this.fldOpen !== -1 ) {
@@ -126,7 +126,7 @@
       if( this.type === 'dropdown' ) {
         var opts = Array.prototype.slice.call( this.optionsList.querySelectorAll( 'li' ) );
         opts.forEach( function( el, i ) {
-          el.addEventListener( 'click', function( ev ) { ev.preventDefault(); self.close( el, opts.indexOf( el ) ); } );
+          el.addEventListener( 'click', function( ev ) { ev.preventDefault(); self.close( el, opts.indexOf( el ) ); runChecker(); } );
           el.addEventListener( 'touchstart', function( ev ) { ev.preventDefault(); self.close( el, opts.indexOf( el ) ); } );
         } );
       }

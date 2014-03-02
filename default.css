@@ -22,8 +22,8 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	/*Main font color*/
-	color: #ffe8e7;
-	background: #E96D65;
+	color: #fff;
+	background: #ff9933;
 	font-weight: 300;
 	overflow-x: hidden;
 }
