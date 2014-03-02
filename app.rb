@@ -4,8 +4,8 @@ require 'pry'
 
 set :bind, '0.0.0.0' # for vagrant
 
-get '/time' do
-  erb :time # this will look for a file called 'views/time.erb'
+get '/' do
+  erb :input # this will look for a file called 'views/time.erb'
 end
 
 get '/input' do
