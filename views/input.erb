@@ -2,27 +2,34 @@
 <html>
 <head>
   <title>Black Box Trainer</title>
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/foundation/5.0.3/css/foundation.css">
   <link rel="stylesheet" type="text/css" href="../default.css" />
-    <link rel="stylesheet" type="text/css" href="../component.css" />
-    <script src="../modernizr.custom.js"></script>
+  <link rel="stylesheet" type="text/css" href="../component.css" />
+  <link rel="stylesheet" type="text/css" href="/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="/demo.css" />
+
 </head>
 <body>
   <div class="main clearfix">
-    <form id="nl-form" class="nl-form">
+    About You
+    <form id="nl-form" class="nl-form ">
       I'm a
       <select>
-        <option value="from_18_to_30" selected>18-30</option>
+        <option value="age" selected>age</option>
+        <option value="from_18_to_30">18-30</option>
         <option value="from_30_to_45">30-45</option>
         <option value="from_45">45+</option>
       </select>
       year-old
       <select>
-        <option value="male" selected>male</option>
+        <option value="gender" selected>gender</option>
+        <option value="male">male</option>
         <option value="female">female</option>
       </select>
       . When it comes to fitness,
       <select>
-        <option value="none" selected>I've never touched a weight in my life.</option>
+        <option value="fitness_knowledge" selected>select current skill level.</option>
+        <option value="none">I've never touched a weight in my life.</option>
         <option value="little">I've worked out before, but don't know what I'm doing.</option>
         <option value="some">I've worked out plenty, so I have an idea.</option>
         <option value="bored">I know what I'm doing, but I'm just looking for something new.</option>
@@ -30,7 +37,8 @@
       </select>
       In regard to my current fitness level,
       <select>
-        <option value="round" selected>I'm in shape... Round's a shape.</option>
+        <option value="fitness_level" selected>select current conditioning.</option>
+        <option value="round">I'm in shape... Round's a shape.</option>
         <option value="occasionally">I go to the gym occassionally.</option>
         <option value="consistently">I go to the gym consistently.</option>
         <option value="big_deal">I live at the gym. I'm a big deal there.</option>
@@ -38,7 +46,8 @@
       </select>
       I have
       <select>
-        <option value="15" selected>15</option>
+        <option value="minutes" selected>number of </option>
+        <option value="15">15</option>
         <option value="30">30</option>
         <option value="45">45</option>
         <option value="60">60</option>
@@ -49,7 +58,8 @@
       </select>
       minutes to work out per day, and I want to work out
       <select>
-        <option value="1" selected>1</option>
+        <option value="number_of" selected>number of</option>
+        <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
@@ -57,16 +67,62 @@
         <option value="6">6</option>
         <option value="7">7</option>
       </select>
-      days per week.
+      day(s) per week.
       <div class="nl-submit-wrap">
         <button class="nl-submit" type="submit">Submit</button>
       </div>
       <div class="nl-overlay"></div>
     </form>
+    <div>
+  </div>
+  <div id="checkboxes">
+    <div class="row">
+      <div class="medium-12 columns fitness_type">
+        Free Weights</br>
+        <input type="checkbox" name="dumbell">Dumbells</br>
+        <input type="checkbox" name="olympic_lift" value="olympic_lift">Olympic LIfting</br>
+        <input type="checkbox" name="medicine_ball" value="medicine_ball">Medicine Ball</br>
+        <input type="checkbox" name="barbell" value="barbell">Barbells</br>
+        <input type="checkbox" name="kettle_bell" value="kettle_bell">Kettle Bells</br>
+        <input type="checkbox" name="bench" value="bench">Bench</br>
+        <input type="checkbox" name="resistance_band" value="resistance_band">Resistance Bands/Tubing</br>
+      </div>
+      <div class="medium-12 columns fitness_type">
+        Home/Gym Extras</br>
+        <input type="checkbox" name="bosu" value="bosu">Bosu Ball</br>
+        <input type="checkbox" name="punching_bag" value="punching_bag">Punching Bag</br>
+        <input type="checkbox" name="pullup" value="pullup">Pull Up Bar</br>
+        <input type="checkbox" name="swiss_ball" value="swiss_ball">Swiss Ball</br>
+        <input type="checkbox" name="rings" value="rings">Rings/TRX</br>
+      </div>
+    </div>
+    <div>
+    <div class="row">
+      <div class="medium-12 columns fitness_type">
+        Machine</br>
+        <input type="checkbox" name="full_machine_suite" value="full_machine_suite">Full Machine Suite</br>
+        <input type="checkbox">Treadmill</br>
+        <input type="checkbox" name="stairmaster" value="stairmaster">Stairmaster</br>
+        <input type="checkbox" name="smith_machine" value="smith_machine">Smith Machine</br>
+        <input type="checkbox" name="rower" value="rower">Rower</br>
+        <input type="checkbox" name="elliptical" value="elliptical">Elliptical Machine</br>
+        <input type="checkbox" name="bike" value="bike">Bike</br>
+        <input type="checkbox" name="hammer" value="hammer">Hammer Strength Suite</br>
+        <input type="checkbox" name="cable_suite" value="cable_suite">Cable Suite</br>
+      </div>
+      <div class="medium-12 columns fitness_type">
+        Environment</br>
+        <input type="checkbox" name="track" value="track">Track</br>
+        <input type="checkbox" name="jogging" value="jogging">Open Area to Jog</br>
+        <input type="checkbox" name="hill" value="hill">Hill</br>
+        <input type="checkbox" name="pool" value="pool">Swimming Pool</br>
+      </div>
+    </div>
   </div>
   <script src="nlform.js"></script>
   <script>
     var nlform = new NLForm( document.getElementById( 'nl-form' ) );
   </script>
+
 </body>
 </html>
