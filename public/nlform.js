@@ -20,6 +20,7 @@
     String.prototype.trim=function(){return this.replace(/^\s+|\s+$/g, '');};
   }
 
+
   function NLForm( el ) {
     this.el = el;
     this.overlay = this.el.querySelector( '.nl-overlay' );
@@ -177,6 +178,8 @@
       }
     }
   }
+
+
 
   // add to global namespace
   window.NLForm = NLForm;

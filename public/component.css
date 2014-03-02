@@ -15,7 +15,6 @@
   margin: 0.3em auto 0 auto;
   font-size: 2em;
   line-height: 1.5;
-  border: 5px dashed blue;
 }
 
 .nl-form ul {
@@ -25,7 +24,6 @@
 }
 
 .fitness_type {
-  border: 5px solid green;
   display: inline-block;
 }
 
@@ -103,7 +101,7 @@
 }
 
 .nl-field ul li {
-  color: #fff;
+  color: #ff9933;
   position: relative;
 }
 
@@ -154,7 +152,7 @@
   width: 100%;
   padding: 0.2em 2em 0.2em 0.5em;
   border-bottom: none;
-  color: #fff;
+  color: #ff9933;
 }
 
 .nl-form .nl-field-go {
@@ -172,7 +170,7 @@
 .nl-field-go:before {
   content: "\e001";
   font-size: 75%;
-  color: #fff;
+  color: #ff9933;
   width: 100%;
   line-height: 2.5;
   display: block;
@@ -217,7 +215,7 @@ input:focus::-ms-input-placeholder {
 }
 
 .nl-ti-text ul li.nl-ti-example em {
-  color: #fff
+  color: #ff9933
 }
 
 /* submit button */
@@ -231,7 +229,7 @@ input:focus::-ms-input-placeholder {
   cursor: pointer;
   position: relative;
   background: #76C3BD;
-  color: #fff;
+  color: #ff9933;
   padding: 0 1em 0 0;
   font-size: 40%;
   font-weight: bold;
@@ -240,7 +238,7 @@ input:focus::-ms-input-placeholder {
 
 .nl-submit:before {
   content: "\e001";
-  color: #fff;
+  color: #ff9933;
   float: left;
   padding: 0 0.7em;
   margin: 0 0.8em 0 0;
@@ -366,7 +364,7 @@ input:focus::-ms-input-placeholder {
 
 .ac-custom label::before {
   content: '';
-  border: 4px solid #fff;
+  border: 4px solid #ff9933;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
@@ -377,7 +375,7 @@ input:focus::-ms-input-placeholder {
 
 .ac-custom input[type="checkbox"]:checked + label,
 .ac-custom input[type="radio"]:checked + label {
-  color: #fff;
+  color: #ff9933;
 }
 
 .ac-custom input[type="checkbox"]:checked + label::before,
@@ -419,7 +417,7 @@ input:focus::-ms-input-placeholder {
 }
 
 .ac-circle label::before {
-  background-color: #fff;
+  background-color: #ff9933;
   border: none;
 }
 
@@ -486,10 +484,9 @@ input:focus::-ms-input-placeholder {
 }
 
 #checkboxes {
-  border: 5px solid silver;
   font-size: 2em;
 }
 
 #goals {
-  border: 5px solid red;
 }
+

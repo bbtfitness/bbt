@@ -11,7 +11,7 @@
 </head>
 <body>
   <div class="main clearfix">
-    About You
+    <p id="about_you" class="medium-12 medium-centered columns">About You</p>
     <form id="nl-form" class="nl-form ">
       I'm a
       <select>
@@ -68,9 +68,6 @@
         <option value="7">7</option>
       </select>
       day(s) per week.
-      <div class="nl-submit-wrap">
-        <button class="nl-submit" type="submit">Submit</button>
-      </div>
       <div class="nl-overlay"></div>
     </form>
     <div>
@@ -78,44 +75,46 @@
   <div id="checkboxes">
     <div class="row">
       <div class="medium-12 columns fitness_type">
-        Free Weights</br>
-        <input type="checkbox" name="dumbell">Dumbells</br>
-        <input type="checkbox" name="olympic_lift" value="olympic_lift">Olympic LIfting</br>
-        <input type="checkbox" name="medicine_ball" value="medicine_ball">Medicine Ball</br>
-        <input type="checkbox" name="barbell" value="barbell">Barbells</br>
-        <input type="checkbox" name="kettle_bell" value="kettle_bell">Kettle Bells</br>
-        <input type="checkbox" name="bench" value="bench">Bench</br>
-        <input type="checkbox" name="resistance_band" value="resistance_band">Resistance Bands/Tubing</br>
+        <button>Free Weights</button></br>
+        <input type="checkbox" name="dumbell"> Dumbells</br>
+        <input type="checkbox" name="olympic_lift" value="olympic_lift"> Olympic LIfting</br>
+        <input type="checkbox" name="medicine_ball" value="medicine_ball"> Medicine Ball</br>
+        <input type="checkbox" name="barbell" value="barbell"> Barbells</br>
+        <input type="checkbox" name="kettle_bell" value="kettle_bell"> Kettle Bells</br>
+        <input type="checkbox" name="bench" value="bench"> Bench</br>
+        <input type="checkbox" name="resistance_band" value="resistance_band"> Resistance  Bands/Tubing</br>
       </div>
       <div class="medium-12 columns fitness_type">
-        Home/Gym Extras</br>
-        <input type="checkbox" name="bosu" value="bosu">Bosu Ball</br>
-        <input type="checkbox" name="punching_bag" value="punching_bag">Punching Bag</br>
-        <input type="checkbox" name="pullup" value="pullup">Pull Up Bar</br>
-        <input type="checkbox" name="swiss_ball" value="swiss_ball">Swiss Ball</br>
-        <input type="checkbox" name="rings" value="rings">Rings/TRX</br>
+        <button>Home/Gym Extras</button></br>
+        <input type="checkbox" name="bosu" value="bosu"> Bosu Ball</br>
+        <input type="checkbox" name="punching_bag" value="punching_bag"> Punching Bag</br>
+        <input type="checkbox" name="pullup" value="pullup"> Pull Up Bar</br>
+        <input type="checkbox" name="swiss_ball" value="swiss_ball"> Swiss Ball</br>
+        <input type="checkbox" name="rings" value="rings"> Rings/TRX</br>
       </div>
     </div>
     <div>
     <div class="row">
       <div class="medium-12 columns fitness_type">
-        Machine</br>
-        <input type="checkbox" name="full_machine_suite" value="full_machine_suite">Full Machine Suite</br>
-        <input type="checkbox">Treadmill</br>
-        <input type="checkbox" name="stairmaster" value="stairmaster">Stairmaster</br>
-        <input type="checkbox" name="smith_machine" value="smith_machine">Smith Machine</br>
-        <input type="checkbox" name="rower" value="rower">Rower</br>
-        <input type="checkbox" name="elliptical" value="elliptical">Elliptical Machine</br>
-        <input type="checkbox" name="bike" value="bike">Bike</br>
-        <input type="checkbox" name="hammer" value="hammer">Hammer Strength Suite</br>
-        <input type="checkbox" name="cable_suite" value="cable_suite">Cable Suite</br>
+        <button>Machine</button></br>
+        <input type="checkbox" name="full_machine_suite" value="full_machine_suite"> Full Machine Suite</br>
+        <input type="checkbox"> Treadmill</br>
+        <input type="checkbox" name="stairmaster" value="stairmaster"> Stairmaster</br>
+        <input type="checkbox" name="smith_machine" value="smith_machine"> Smith Machine</br>
+        <input type="checkbox" name="rower" value="rower"> Rower</br>
+        <input type="checkbox" name="elliptical" value="elliptical"> Elliptical Machine</br>
+        <input type="checkbox" name="bike" value="bike"> Bike</br>
+        <input type="checkbox" name="hammer" value="hammer"> Hammer Strength Suite</br>
+        <input type="checkbox" name="cable_suite" value="cable_suite"> Cable Suite</br>
       </div>
       <div class="medium-12 columns fitness_type">
-        Environment</br>
-        <input type="checkbox" name="track" value="track">Track</br>
-        <input type="checkbox" name="jogging" value="jogging">Open Area to Jog</br>
-        <input type="checkbox" name="hill" value="hill">Hill</br>
-        <input type="checkbox" name="pool" value="pool">Swimming Pool</br>
+        <button id="environment_title">Environment</button>
+        <div id="environment_resources">
+          <input type="checkbox" name="track" value="track"> Track</br>
+          <input type="checkbox" name="jogging" value="jogging"> Open Area to Jog</br>
+          <input type="checkbox" name="hill" value="hill"> Hill</br>
+          <input type="checkbox" name="pool" value="pool"> Swimming Pool
+        </div>
       </div>
     </div>
   </div>
