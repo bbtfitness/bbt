@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Black Box Trainer</title>
+  <link rel="stylesheet" type="text/css" href="../default.css" />
+    <link rel="stylesheet" type="text/css" href="../component.css" />
+    <script src="../modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="main clearfix">
+    <form id="nl-form" class="nl-form">
+      I'm a
+      <select>
+        <option value="from_18_to_30" selected>18-30</option>
+        <option value="from_30_to_45">30-45</option>
+        <option value="from_45">45+</option>
+      </select>
+      year-old
+      <select>
+        <option value="male" selected>male</option>
+        <option value="female">female</option>
+      </select>
+      . When it comes to fitness,
+      <select>
+        <option value="none" selected>I've never touched a weight in my life.</option>
+        <option value="little">I've worked out before, but don't know what I'm doing.</option>
+        <option value="some">I've worked out plenty, so I have an idea.</option>
+        <option value="bored">I know what I'm doing, but I'm just looking for something new.</option>
+        <option value="pro">why am I even using this website?</option>
+      </select>
+      In regard to my current fitness level,
+      <select>
+        <option value="round" selected>I'm in shape... Round's a shape.</option>
+        <option value="occasionally">I go to the gym occassionally.</option>
+        <option value="consistently">I go to the gym consistently.</option>
+        <option value="big_deal">I live at the gym. I'm a big deal there.</option>
+        <option value="freak">I'm a freak of nature.</option>
+      </select>
+      I have
+      <select>
+        <option value="15" selected>15</option>
+        <option value="30">30</option>
+        <option value="45">45</option>
+        <option value="60">60</option>
+        <option value="75">75</option>
+        <option value="90">90</option>
+        <option value="105">105</option>
+        <option value="120">120</option>
+      </select>
+      minutes to work out per day, and I want to work out
+      <select>
+        <option value="1" selected>1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+      days per week.
+      <div class="nl-submit-wrap">
+        <button class="nl-submit" type="submit">Submit</button>
+      </div>
+      <div class="nl-overlay"></div>
+    </form>
+  </div>
+  <script src="nlform.js"></script>
+  <script>
+    var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+  </script>
+</body>
+</html>
