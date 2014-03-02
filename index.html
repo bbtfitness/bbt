@@ -3,131 +3,84 @@
 <head>
   <title>Black Box Trainer</title>
   <link rel="stylesheet" href="http://cdn.jsdelivr.net/foundation/5.0.3/css/foundation.css">
-  <link rel="stylesheet" type="text/css" href="../default.css" />
-  <link rel="stylesheet" type="text/css" href="../component.css" />
-  <link rel="stylesheet" type="text/css" href="../normalize.css" />
-  <link rel="stylesheet" type="text/css" href="../demo.css" />
+  <link rel="stylesheet" type="text/css" href="public/default.css" />
+  <link rel="stylesheet" type="text/css" href="public/component.css" />
+  <link rel="stylesheet" type="text/css" href="public/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="public/demo.css" />
+  <style>
+    body {
+      margin-top: 30px;
+      background: #ff9933;
+    }
+    #goals > div {
+      margin-bottom: 30px;
+    }
+    #about_you {
+      font-size: 2.5em;
+      font-weight: bold;
+      text-align: center;
+    }
+    #your_workout {
+      text-align: center;
+
+    }
+    #your_workout li {
+      list-style-type: none;
+      font-size: 2em;
+    }
+    #customize_me_bg {
+       box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+       padding-bottom: 30px;
+    }
+  </style>
 </head>
 <body>
-    <p id="about_you" class="row">Customize Me</p>
+
+    <div id="about_you" class="row">Black Box Trainer<br /><br /></div>
     <div id="customize_me_bg" class="medium-12 columns">
       <div class="medium-8 medium-centered columns">
         <form id="nl-form" class="nl-form ">
           I'm a
-          <select>
-            <option value="age" selected>age</option>
-            <option value="from_18_to_30">18-30</option>
-            <option value="from_30_to_45">30-45</option>
-            <option value="from_45">45+</option>
+          <select class="changed" id="age"  >
+            <option value="" selected>age</option>
+            <option value="18">18-30</option>
+            <option value="30">30-45</option>
+            <option value="45">45+</option>
           </select>
           year-old
-          <select>
-            <option value="gender" selected>gender</option>
-            <option value="male">male</option>
-            <option value="female">female</option>
+          <select class="changed" id="gender" >
+            <option value="" selected>gender</option>
+            <option value="m">male</option>
+            <option value="f">female</option>
           </select>
-          . When it comes to fitness,
-          <select>
-            <option value="fitness_knowledge" selected>select current skill level.</option>
-            <option value="none">I've never touched a weight in my life.</option>
-            <option value="little">I've worked out before, but don't know what I'm doing.</option>
-            <option value="some">I've worked out plenty, so I have an idea.</option>
-            <option value="bored">I know what I'm doing, but I'm just looking for something new.</option>
-            <option value="pro">why am I even using this website?</option>
+          . When it comes to fitness, my goal is to
+          <select class="changed" id="goal" >
+            <option value="" selected>goal</option>
+            <option value="0" >lose weight</option>
+            <option value="1">increase strength</option>
+            <option value="2">be healthy and fit</option>
           </select>
-          In regard to my current fitness level,
-          <select>
-            <option value="fitness_level" selected>select current conditioning.</option>
-            <option value="round">I'm in shape... Round's a shape.</option>
-            <option value="occasionally">I go to the gym occassionally.</option>
-            <option value="consistently">I go to the gym consistently.</option>
-            <option value="big_deal">I live at the gym. I'm a big deal there.</option>
-            <option value="freak">I'm a freak of nature.</option>
-          </select>
-          I have
-          <select>
-            <option value="minutes" selected>number of </option>
-            <option value="15">15</option>
-            <option value="30">30</option>
-            <option value="45">45</option>
-            <option value="60">60</option>
-            <option value="75">75</option>
-            <option value="90">90</option>
-            <option value="105">105</option>
-            <option value="120">120</option>
-          </select>
-          minutes to work out per day, and I want to work out
-          <select>
-            <option value="number_of" selected>number of</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-          </select>
-          day(s) per week.
+          .
         </form>
       </div>
     </div>
-    <div id="workout_preference"></br>I like to workout using:</br></div>
-      <div class="row checkboxes">
-        <div id="free_weights" class="medium-6 columns fitness_type">
-          <p class="checkbox_title">Free Weights</p>
-          <form>
-            <input type="checkbox" name="barbell" value="barbell"> Barbells</br>
-            <input type="checkbox" name="bench" value="bench"> Bench</br>
-            <input type="checkbox" name="dumbell"> Dumbells</br>
-            <input type="checkbox" name="kettle_bell" value="kettle_bell"> Kettle Bells</br>
-            <input type="checkbox" name="medicine_ball" value="medicine_ball"> Medicine Ball</br>
-            <input type="checkbox" name="olympic_lift" value="olympic_lift"> Olympic LIfting</br>
-            <input type="checkbox" name="resistance_band" value="resistance_band"> Resistance  Bands/Tubing</br>
-          </div>
-          <div id="machine" class="medium-6 columns fitness_type">
-            <p class="checkbox_title">Machine</p>
-            <input type="checkbox" name="bike" value="bike"> Bike</br>
-            <input type="checkbox" name="elliptical" value="elliptical"> Elliptical Machine</br>
-            <input type="checkbox" name="full_machine_suite" value="full_machine_suite"> Full Machine Suite</br>
-            <input type="checkbox" name="rower" value="rower"> Rower</br>
-            <input type="checkbox" name="smith_machine" value="smith_machine"> Smith Machine</br>
-            <input type="checkbox" name="stairmaster" value="stairmaster"> Stairmaster</br>
-            <input type="checkbox"> Treadmill</br>
-          </div>
-        </div>
-        <div class="row checkboxes">
-          <div id="home" class="medium-6 columns fitness_type">
-          <p class="checkbox_title">Home/Gym Extras</p>
-          <input type="checkbox" name="bosu" value="bosu"> Bosu Ball</br>
-          <input type="checkbox" name="pullup" value="pullup"> Pull Up Bar</br>
-          <input type="checkbox" name="punching_bag" value="punching_bag"> Punching Bag</br>
-          <input type="checkbox" name="rings" value="rings"> Rings/TRX</br>
-          <input type="checkbox" name="swiss_ball" value="swiss_ball"> Swiss Ball</br>
-          </div>
-          <div id="environment" class="medium-6 columns fitness_type">
-            <p class="checkbox_title">Environment</p>
-            <input type="checkbox" name="hill" value="hill"> Hill</br>
-            <input type="checkbox" name="jogging" value="jogging"> Jogging</br>
-            <input type="checkbox" name="stairs" value="stairs"> Stairs</br>
-            <input type="checkbox" name="pool" value="pool"> Swimming Pool<br>
-            <input type="checkbox" name="track" value="track"> Track</br>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+
   </div>
-  <div class="row">
-    <div id="fitness_goal" class="medium-12 columns">
-      My fitness goal is:
+  <div class="row" >
+    <div class="medium-12 columns workout" style="font-size:1.8em; margin-top: 20px" >
+      <ul id="your_workout"></ul>
     </div>
+<!--     <div id="fitness_goal" class="medium-12 columns" style="font-size:2em;padding-left: 30px">
+      <br /><br />
+      My fitness goal is:
+    </div> -->
   </div></br>
-  <div id="goals" class="row">
+<!--   <div id="goals" class="row">
     <div class="medium-12 columns">
       <a href="">
         <div class="medium-3 flip3d columns">
           <div class="flip3d front">
-            <img class="goal_pic" src="/black box-11.png">
+            <img class="goal_pic" src="public/black box-11.png">
           </div>
           <div class="flip3d back">
           </div>
@@ -136,7 +89,7 @@
       <a href="">
         <div class="medium-3 flip3d columns">
           <div class="front">
-            <img class="goal_pic" src="/black box-12.png">
+            <img class="goal_pic" src="public/black box-12.png">
           </div>
           <div class="back">
           </div>
@@ -145,7 +98,7 @@
       <a href="">
         <div class="medium-3 flip3d columns">
           <div class="front">
-            <img class="goal_pic" src="/black box-13.png">
+            <img class="goal_pic" src="public/black box-13.png">
           </div>
           <div class="back">
           </div>
@@ -154,7 +107,7 @@
       <a href="">
         <div class="medium-3 flip3d columns">
           <div class="front">
-            <img class="goal_pic" src="/black box-14.png">
+            <img class="goal_pic" src="public/black box-14.png">
           </div>
           <div class="back">
           </div>
@@ -165,7 +118,7 @@
       <a href="">
         <div class="medium-3 columns flip3d">
           <div class="front">
-            <img class="goal_pic" src="/black box-15.png">
+            <img class="goal_pic" src="public/black box-15.png">
           </div>
           <div class="back">
           </div>
@@ -174,7 +127,7 @@
       <a href="">
         <div class="medium-3 columns flip3d">
           <div class="front">
-            <img class="goal_pic" src="/black box-16.png">
+            <img class="goal_pic" src="public/black box-16.png">
           </div>
           <div class="back">
           </div>
@@ -183,7 +136,7 @@
       <a href="">
         <div class="medium-3 columns flip3d">
           <div class="front">
-            <img class="goal_pic" src="/black box-17.png">
+            <img class="goal_pic" src="public/black box-17.png">
           </div>
           <div class="back">
           </div>
@@ -192,7 +145,7 @@
       <a href="">
         <div class="medium-3 columns flip3d">
           <div class="front">
-            <img class="goal_pic" src="/black box-18.png">
+            <img class="goal_pic" src="public/black box-18.png">
           </div>
           <div class="back">
           </div>
@@ -200,14 +153,51 @@
       </a>
     </div>
   </div>
+ -->
   <div class="row">
-    <div id="bbt_footer" class="medium-12 columns">
+<!--     <div id="bbt_footer" class="medium-12 columns">
       Black Box Trainer 2014
-    </div>
+    </div> -->
   </div>
-  <script src="nlform.js"></script>
+  <script src="public/nlform.js"></script>
+  <script src="http://cdn.jsdelivr.net/jquery/2.1.0/jquery.min.js"></script>
   <script>
+
+    $(document).ready(function(){
+          $('.changed').change(function(){
+            console.log("PLEASE")
+          })
+
+    });
+
+    function runChecker() {
+      var age = $('#age').val();
+      var gender = $('#gender').val();
+      var goal = $("#goal").val();
+
+      if(!age || !gender || !goal) {
+        console.log('not ready');
+      } else {
+          var params = {
+            age: age,
+            gender: gender,
+            goal: goal
+          }
+          console.log(params);
+          if (params["goal"] == 0) {
+            $('#your_workout').html("<h2>Your exercises are</h2><li>lunges (3 sets of 20 reps)</li><li>squats (3 sets of 20 reps)</li> <li>barbell rows (2 sets of 20 reps)</li><li>chest press (2 sets of 5 reps)</li><li> ab circuit and interval cardio (30 minutes zone 1)</li><li><strong>For this goal, rest 45 seconds between sets</strong></li>");
+          } else if (params["goal"] == 1) {
+            $('#your_workout').html("<h2>Your exercises are</h2><li>bench press (3 sets of 12 reps)</li><li>dumbell incline flys (3 sets of 12 reps)</li><li>dips (3 sets of 10 reps)</li><li>lat pull-downs (3 sets of 8 reps)</li><li>reverse fly (3 sets of 10 reps)</li><li>dumbell rows (3 sets of 10reps)</li><li>cardio (10 minutes at level 1)</li><li><strong>For this goal, rest 90 seconds between sets</strong></li>");
+          } else if (params["goal"] == 2) {
+            $('#your_workout').html("<h2>Your exercises are</h2><li>dead lifts (3 sets of 10 reps)</li><li>dumbell rows (3 sets of 10 reps)</li><li>dumbell incline flys (3 sets of 8 reps)</li><li>preacher curls (3 sets of 12 reps)</li><li>tricep pushdowns (3 sets of 8 reps)</li><li>interval cardio (15 minutes zone 1 and 2 alternating)</li><li><strong>For this goal, rest 60 seconds between sets</strong></li>");
+          }
+      }
+
+    };
+
     var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+
+
   </script>
 
 </body>
