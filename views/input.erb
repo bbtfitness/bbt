@@ -5,9 +5,8 @@
   <link rel="stylesheet" href="http://cdn.jsdelivr.net/foundation/5.0.3/css/foundation.css">
   <link rel="stylesheet" type="text/css" href="../default.css" />
   <link rel="stylesheet" type="text/css" href="../component.css" />
-  <link rel="stylesheet" type="text/css" href="/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="/demo.css" />
-  <style type="text/css"></style>
+  <link rel="stylesheet" type="text/css" href="../normalize.css" />
+  <link rel="stylesheet" type="text/css" href="../demo.css" />
 </head>
 <body>
     <p id="about_you" class="row">Customize Me</p>
@@ -76,41 +75,43 @@
       <div class="row checkboxes">
         <div id="free_weights" class="medium-6 columns fitness_type">
           <p class="checkbox_title">Free Weights</p>
-          <input type="checkbox" name="barbell" value="barbell"> Barbells</br>
-          <input type="checkbox" name="bench" value="bench"> Bench</br>
-          <input type="checkbox" name="dumbell"> Dumbells</br>
-          <input type="checkbox" name="kettle_bell" value="kettle_bell"> Kettle Bells</br>
-          <input type="checkbox" name="medicine_ball" value="medicine_ball"> Medicine Ball</br>
-          <input type="checkbox" name="olympic_lift" value="olympic_lift"> Olympic LIfting</br>
-          <input type="checkbox" name="resistance_band" value="resistance_band"> Resistance  Bands/Tubing</br>
+          <form class="ac-custom ac-checkmark" autocomplete="off">
+            <input type="checkbox" name="barbell" value="barbell"> Barbells</br>
+            <input type="checkbox" name="bench" value="bench"> Bench</br>
+            <input type="checkbox" name="dumbell"> Dumbells</br>
+            <input type="checkbox" name="kettle_bell" value="kettle_bell"> Kettle Bells</br>
+            <input type="checkbox" name="medicine_ball" value="medicine_ball"> Medicine Ball</br>
+            <input type="checkbox" name="olympic_lift" value="olympic_lift"> Olympic LIfting</br>
+            <input type="checkbox" name="resistance_band" value="resistance_band"> Resistance  Bands/Tubing</br>
+          </div>
+          <div id="machine" class="medium-6 columns fitness_type">
+            <p class="checkbox_title">Machine</p>
+            <input type="checkbox" name="bike" value="bike"> Bike</br>
+            <input type="checkbox" name="elliptical" value="elliptical"> Elliptical Machine</br>
+            <input type="checkbox" name="full_machine_suite" value="full_machine_suite"> Full Machine Suite</br>
+            <input type="checkbox" name="rower" value="rower"> Rower</br>
+            <input type="checkbox" name="smith_machine" value="smith_machine"> Smith Machine</br>
+            <input type="checkbox" name="stairmaster" value="stairmaster"> Stairmaster</br>
+            <input type="checkbox"> Treadmill</br>
+          </div>
         </div>
-        <div id="machine" class="medium-6 columns fitness_type">
-          <p class="checkbox_title">Machine</p>
-          <input type="checkbox" name="bike" value="bike"> Bike</br>
-          <input type="checkbox" name="elliptical" value="elliptical"> Elliptical Machine</br>
-          <input type="checkbox" name="full_machine_suite" value="full_machine_suite"> Full Machine Suite</br>
-          <input type="checkbox" name="rower" value="rower"> Rower</br>
-          <input type="checkbox" name="smith_machine" value="smith_machine"> Smith Machine</br>
-          <input type="checkbox" name="stairmaster" value="stairmaster"> Stairmaster</br>
-          <input type="checkbox"> Treadmill</br>
-        </div>
-      </div>
-      <div class="row checkboxes">
-        <div id="home" class="medium-6 columns fitness_type">
+        <div class="row checkboxes">
+          <div id="home" class="medium-6 columns fitness_type">
           <p class="checkbox_title">Home/Gym Extras</p>
           <input type="checkbox" name="bosu" value="bosu"> Bosu Ball</br>
           <input type="checkbox" name="pullup" value="pullup"> Pull Up Bar</br>
           <input type="checkbox" name="punching_bag" value="punching_bag"> Punching Bag</br>
           <input type="checkbox" name="rings" value="rings"> Rings/TRX</br>
           <input type="checkbox" name="swiss_ball" value="swiss_ball"> Swiss Ball</br>
-        </div>
-        <div id="environment" class="medium-6 columns fitness_type">
-          <p class="checkbox_title">Environment</p>
+          </div>
+          <div id="environment" class="medium-6 columns fitness_type">
+            <p class="checkbox_title">Environment</p>
             <input type="checkbox" name="hill" value="hill"> Hill</br>
             <input type="checkbox" name="jogging" value="jogging"> Jogging</br>
             <input type="checkbox" name="stairs" value="stairs"> Stairs</br>
             <input type="checkbox" name="pool" value="pool"> Swimming Pool<br>
             <input type="checkbox" name="track" value="track"> Track</br>
+            </form>
           </div>
         </div>
       </div>
@@ -122,65 +123,87 @@
     </div>
   </div></br>
   <div id="goals" class="row">
-    <div class="medium-12 columns ontouchstart="this.classList.toggle('hover');"">
-      <div class="medium-3 flip3d columns">
-        <div class="flip3d front">
-          <img class="goal_pic" src="/black box-11.png">
+    <div class="medium-12 columns">
+      <a href="">
+        <div class="medium-3 flip3d columns">
+          <div class="flip3d front">
+            <img class="goal_pic" src="/black box-11.png">
+          </div>
+          <div class="flip3d back">
+          </div>
         </div>
-        <div class="flip3d back">
+      </a>
+      <a href="">
+        <div class="medium-3 flip3d columns">
+          <div class="front">
+            <img class="goal_pic" src="/black box-12.png">
+          </div>
+          <div class="back">
+          </div>
         </div>
-      </div>
-      <div class="medium-3 flip3d columns">
-        <div class="front">
-          <img class="goal_pic" src="/black box-12.png">
+      </a>
+      <a href="">
+        <div class="medium-3 flip3d columns">
+          <div class="front">
+            <img class="goal_pic" src="/black box-13.png">
+          </div>
+          <div class="back">
+          </div>
         </div>
-        <div class="back">
+      </a>
+      <a href="">
+        <div class="medium-3 flip3d columns">
+          <div class="front">
+            <img class="goal_pic" src="/black box-14.png">
+          </div>
+          <div class="back">
+          </div>
         </div>
-      </div>
-      <div class="medium-3 flip3d columns">
-        <div class="front">
-          <img class="goal_pic" src="/black box-13.png">
-        </div>
-        <div class="back">
-        </div>
-      </div>
-      <div class="medium-3 flip3d columns">
-        <div class="front">
-          <img class="goal_pic" src="/black box-14.png">
-        </div>
-        <div class="back">
-        </div>
-      </div>
+      </a>
     </div>
     <div class="medium-12 columns">
-      <div class="medium-3 columns flip3d">
-        <div class="front">
-          <img class="goal_pic" src="/black box-15.png">
+      <a href="">
+        <div class="medium-3 columns flip3d">
+          <div class="front">
+            <img class="goal_pic" src="/black box-15.png">
+          </div>
+          <div class="back">
+          </div>
         </div>
-        <div class="back">
+      </a>
+      <a href="">
+        <div class="medium-3 columns flip3d">
+          <div class="front">
+            <img class="goal_pic" src="/black box-16.png">
+          </div>
+          <div class="back">
+          </div>
         </div>
-      </div>
-      <div class="medium-3 columns flip3d">
-        <div class="front">
-          <img class="goal_pic" src="/black box-16.png">
+      </a>
+      <a href="">
+        <div class="medium-3 columns flip3d">
+          <div class="front">
+            <img class="goal_pic" src="/black box-17.png">
+          </div>
+          <div class="back">
+          </div>
         </div>
-        <div class="back">
+      </a>
+      <a href="">
+        <div class="medium-3 columns flip3d">
+          <div class="front">
+            <img class="goal_pic" src="/black box-18.png">
+          </div>
+          <div class="back">
+          </div>
         </div>
-      </div>
-      <div class="medium-3 columns flip3d">
-        <div class="front">
-          <img class="goal_pic" src="/black box-17.png">
-        </div>
-        <div class="back">
-        </div>
-      </div>
-      <div class="medium-3 columns flip3d">
-        <div class="front">
-          <img class="goal_pic" src="/black box-18.png">
-        </div>
-        <div class="back">
-        </div>
-      </div>
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div id="bbt_footer" class="medium-12 columns">
+      Black Box Trainer 2014
+    </div>
   </div>
   <script src="nlform.js"></script>
   <script>

@@ -404,43 +404,12 @@ input:focus::-ms-input-placeholder {
 }
 
 /* Specific input, SVG and path styles */
-
-/* Circle */
-.ac-circle input[type="checkbox"],
-.ac-circle input[type="radio"],
-.ac-circle label::before {
-  width: 30px;
-  height: 30px;
-  margin-top: -15px;
-  left: 10px;
-  position: absolute;
-}
-
-.ac-circle label::before {
-  background-color: #ff9933;
-  border: none;
-}
-
-.ac-circle svg {
-  width: 70px;
-  height: 70px;
-  margin-top: -35px;
-  left: -10px;
-}
-
-.ac-circle svg path {
-  stroke-width: 5px;
-}
-
 /* Box Fill */
 .ac-boxfill svg path {
   stroke-width: 8px;
 }
 
 /* Swirl */
-.ac-swirl svg path {
-  stroke-width: 8px;
-}
 
 /* List */
 .ac-list ol {
@@ -553,3 +522,8 @@ flip3d:hover > back {
   transform: perspective( 600px ) rotateY( 0deg);
 }
 
+#bbt_footer {
+  font-size: 1.5em;
+  line-height: 300%;
+  text-align: center;
+}
