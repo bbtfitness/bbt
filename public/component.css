@@ -14,7 +14,7 @@
   width: 100%;
   margin: 0.3em auto 0 auto;
   font-size: 2em;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 .nl-form ul {
@@ -487,6 +487,13 @@ input:focus::-ms-input-placeholder {
   font-size: 2em;
 }
 
+
+#free_weights, #machine, #home, #environment {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 180%;
+}
+
 #fitness_goal {
   font-size: 3em;
   text-align: center;
@@ -504,6 +511,7 @@ input:focus::-ms-input-placeholder {
 #workout_preference {
   font-size: 3em;
   text-align: center;
+  line-height: 180%;
 }
 
 #customize_me_bg {
