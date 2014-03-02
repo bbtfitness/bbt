@@ -101,7 +101,7 @@
 }
 
 .nl-field ul li {
-  color: #ff9933;
+  color: white;
   position: relative;
 }
 
@@ -518,3 +518,38 @@ input:focus::-ms-input-placeholder {
   background-color: #ff9933;
   width: 100%;
 }
+
+.checkbox_title {
+  font-size: 2em;
+}
+
+.flip3d {}
+
+.flip3d > .front {
+  -webkit-transform: perspective ( 600px ) rotateY ( 0deg );
+  transform: perspective( 600px );
+  border-radius: 5px;
+  backface-visibility: hidden;
+  transition: -webkit-transform .5s linear 0s;
+  transition: transform .5s linear 0s;
+}
+
+.flip3d > .back {
+  -webkit-transform: perspective ( 600px ) rotateY( 180deg );
+  transform: perspective( 600px ) rotateY( 180deg );
+  border-radius: 5px;
+  backface-visibility: hidden;
+  transition: -webkit-transform .5s linear 0s;
+  transition: transform .5s linear 0s;
+}
+
+.flip3d:hover > front {
+  -webkit-transform: perspective( 600px ) rotateY ( -180deg );
+  transform: perspective( 600px ) rotateY( -180deg );
+}
+
+flip3d:hover > back {
+  -webkit-transform: perspective( 600px ) rotateY( 0deg );
+  transform: perspective( 600px ) rotateY( 0deg);
+}
+
